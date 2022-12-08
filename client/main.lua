@@ -10,7 +10,7 @@ local IsEntityInWater = IsEntityInWater
 
 exports.ox_target:addGlobalPlayer({
     {
-        icon = '',
+        icon = 'fa-regular fa-gun',
         label = 'GSR Test',
         groups = 'police',
         canInteract = function(entity, distance, coords, name)
