@@ -2,8 +2,10 @@
 **Version:** 1.0
 **Created by:** BenZoN
 
-**Requirements esx_gsr**
+**Requirements drp_gsr**
+
 [ox_target](https://github.com/overextended/ox_target)
+
 [ox_lib](https://github.com/overextended/ox_lib)
 
 **Description**
