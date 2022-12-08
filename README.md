@@ -20,7 +20,7 @@ This is a simple Gunshot Residue script for FiveM, dos not require a specific fr
 
 **Installation bzn_gsr**
 
-- Download - https://github.com/BattleRattt/Radiant_gsrtest/archive/master.zip
+- Download - https://github.com/benzon/bzn_gsr/archive/refs/tags/1.0.zip
 - Put it in the `any` directory
 - Add this to your  `server.cfg`:
 ```
