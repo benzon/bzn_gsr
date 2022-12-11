@@ -17,7 +17,8 @@ exports.ox_target:addGlobalPlayer({
             return distance < 1.5
         end,
         onSelect = function(data)
-            if Player(GetPlayerServerId(NetworkGetPlayerIndexFromPed(data.entity))).state.gsr then
+            local status = lib.callback.await('bzn_gsr:server:check:gsr', false)
+            if status then
                 return lib.notify({
                     title = 'Positive',
                     description = 'There where found Gunshot Residue on this person.',

@@ -1,5 +1,11 @@
 local GsrData = {}
 
+lib.callback.register('bzn_gsr:server:check:gsr', function(source)
+    local _source = source
+    
+    return Player(_source).state.gsr
+end)
+
 lib.callback.register('bzn_gsr:server:set:gsr', function(source)
     local _source = source
     GsrData[_source] = os.time(os.date("!*t")) + (Config.GsrTime * 1000 * 60)
