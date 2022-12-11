@@ -2,7 +2,7 @@ local GsrData = {}
 
 lib.callback.register('bzn_gsr:server:check:gsr', function(source)
     local _source = source
-    
+
     return Player(_source).state.gsr
 end)
 
@@ -28,7 +28,7 @@ RemoveGSR = function()
     for k, v in pairs(GsrData) do
         if v <= os.time(os.date("!*t")) then
             GsrData[k] = nil
-            Player(_source).state:set('gsr', false, true)
+            Player(k).state:set('gsr', false, true)
         end
     end
     
